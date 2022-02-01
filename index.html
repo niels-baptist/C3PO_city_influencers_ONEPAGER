@@ -12,21 +12,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>City Influencers</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row fullscreen">
-            <div class="col-12 centerxy text-center">
-                <h1 class="p-2">Welkom bij <span class="text-accent">CITY INFLUENCERS</span></h1>
-                <h4 class="p-2">Een iniatief van 
-                    <span class="text-secondary">
-                        <a class="text-dark" href="https://www.fairville.be">Fairville</a>
-                    </span>
-                </h4>
-                <a class="btn btn-blue" href="#about">#GetToKnowUs</a>
-            </div>
+  
+    <div class="row fullscreen">
+      <div class="col-12 centerxy text-center">
+        <img class="m-auto w-25" src="./assets/img/ci-logo-nobg.png" alt="">
+          <h1 class="p-2">Welkom bij <span class="text-accent">CITY INFLUENCERS</span></h1>
+          <h4 class="p-2">Een iniatief van 
+              <span class="text-secondary">
+                  <a class="text-dark underline" href="https://www.fairville.be">Fairville</a>
+              </span>
+          </h4>
+          <a class="btn btn-blue" href="#about">#GetToKnowUs</a>
         </div>
+    </div>
+ 
+    <div class="container">
         <div class="row m-5">
             <img class="p-5" id="about" src="./assets/img/town.svg" alt="picture of town">
             <div class="col-12 text-center">
@@ -40,9 +49,31 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row p-5 mt-5 mb-5">
+          <a class="text-dark m-0 p-0 col-6" href="#app">
+            <div class="card">
+              <img class="card-img-top" src="./assets/img/influencer.svg" alt="Card image cap">
+              <div class="card-body">
+                <h3 class="card-text text-center">
+                  <span>Ik ben een influencer</span>
+                </h3>
+              </div>
+            </div>
+          </a>
+          <a class="text-dark m-0 p-0 col-6" href="#webapp">
+            <div class="card">
+              <img class="card-img-top" src="./assets/img/desk.svg" alt="Card image cap">
+              <div class="card-body">
+                <h3 class="card-text text-center">Ik werk bij de gemeente</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="row mt-5 mb-5" id="app">
             <div class="col-12 text-center p-5">
                 <h2 class="p-4">Onze app</h2>
+            </div>
+            <div class="col-sm-12 col-md-6 text-center">
                 <!-- bootstrap caroussel -->
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner w-100 p-5">
@@ -57,9 +88,44 @@
                       </div>
                     </div>
                   </div>
-                  <a class="btn btn-blue" href=""><i class="fas fa-download text-white"></i>&nbsp; Download onze app</a>
             </div>
+            <div class="col-sm-12 col-md-6 text-center vertically-centered">
+              <p>Met onze app kunnen influencers eenvoudig deelnemen aan campagnes die ter beschikking gesteld worden door de gemeente.
+                 Als influencer kan je vouchers verdienen wanneer je deelneemt aan een campagne en de gemeente jouw inzendingen goedkeurt.
+              </p>
+            </div>
+            <a class="btn btn-blue w-25 m-auto" href=""><i class="fas fa-download text-white"></i>&nbsp; Download onze app</a>
         </div>
+        <div class="row mt-5 mb-5" id="webapp">
+          <div class="col-12 text-center p-5">
+              <h2 class="p-4">Onze webapplicatie</h2>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center">
+              <!-- bootstrap caroussel -->
+              <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner w-100 p-5">
+                    <div class="carousel-item active">
+                      <img src="./assets/img/town.svg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/town.svg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./assets/img/town.svg" class="d-block w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center vertically-centered">
+            <p> Op onze webapplicatie kunnen medewerkers van de gemeente de campagnes 
+              beheren en inzichten verkrijgen over de prestaties en betrokkenheid van 
+              deze campagnes. Deze webapplicatie is een interface tussen de gemeente en de influencer.
+            </p>
+          </div>
+          <a class="btn btn-blue w-25 m-auto" target="blank" href="https://webappc3poci.azurewebsites.net">
+            <i class="fas fa-globe text-white"></i>&nbsp; Naar de webapplicatie
+          </a>
+      </div>
     </div>
 
     <footer class="text-center text-white">
