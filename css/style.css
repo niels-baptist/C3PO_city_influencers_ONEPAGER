@@ -1,5 +1,6 @@
 body{
     font-family: 'Lato', sans-serif;
+    font-size: 19px;
 }
 
 .fullscreen{
@@ -7,11 +8,6 @@ body{
     padding: 0;
     width: 100%;
     height: 100vh;
-}
-
-.logoimg{
-    padding: 0;
-    margin: 0;
 }
 
 .centerxy{
@@ -52,7 +48,7 @@ footer{
 }
 
 i{
-    color: #34b6c6;
+    color: #fff;
 }
 
 a{
@@ -69,6 +65,11 @@ a{
     border-radius: 10px;
     margin: 3px;
     height: 100%;
+}
+
+.bg-blue{
+    background-color: #34b6c6;
+    color: #fff;
 }
 
 .card:hover{
@@ -91,5 +92,5 @@ a{
 }
 
 .fullheight{
-    height: 100vh;
+    height: 120vh;
 }
